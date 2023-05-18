@@ -97,6 +97,7 @@ nav a.nav-link {
 .btn-outline-primary {
   color: $button-color-primary;
   border-color: $button-color-primary;
+  border-radius: 0;
 }
 
 .btn-outline-primary:hover {
