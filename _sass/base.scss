@@ -1,15 +1,16 @@
-$backgroundColor: #ffffff;
-$bodyColor: #000000;
+$backgroundColor: #282C35;
+$bodyColor: #ffffff;
 $bodyFont: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
   Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
 $white: #ffffff;
-$main: #980026;
-$accent: #ffff00;
+$brand: #E71D36;
+$accent: #E3D26F;
 $base-size: 0.8rem; /* 16px */
 $golden-ratio: 1.618;
 $base-size-sm: 0.75rem;
 $golden-ratio-sm: 1.333;
+$button-color-primary: #ffffff;
 
 body {
   background: $backgroundColor;
@@ -20,11 +21,12 @@ body {
 // NAV STYLES
 
 nav.navbar {
-  background-color: $main;
+  background-color: $backgroundColor;
   color: $white;
 }
 
-nav a.navbar-brand {
+nav a.navbar-brand,
+nav a.navbar-brand:hover {
   color: $white;
 }
 
@@ -32,17 +34,18 @@ nav a.nav-link {
   color: $white;
   border-bottom-color: $white;
   border-bottom: 0.15em solid;
+  transition: border-bottom-color 0.25s ease;
 }
 
 .nav-link:focus,
 .nav-link:hover {
-  color: $accent;
-  border-bottom-color: $white;
+  border-bottom-color: $brand;
+  color: $white;
 }
 
 .navbar-nav .nav-link.active {
-  color: $accent;
-  border-bottom-color: $accent;
+  color: $brand;
+  border-bottom-color: $brand;
 }
 
 @media (min-width: 992px) {
@@ -92,19 +95,19 @@ nav a.nav-link {
 
 // BUTTONS
 .btn-outline-primary {
-  color: $main;
-  border-color: $main;
+  color: $button-color-primary;
+  border-color: $button-color-primary;
 }
 
 .btn-outline-primary:hover {
-  background-color: $main;
-  border-color: $main;
+  background-color: $brand;
+  border-color: $brand;
 }
 
 /* ANIMATIONS */
 
 .main_content {
-  animation: fadeIn 1s;
+  animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
