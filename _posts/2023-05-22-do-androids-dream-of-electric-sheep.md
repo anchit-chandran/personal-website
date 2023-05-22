@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Do Androids Dream of Electric Sheep?"
+title:  "How algorithms avoid good solutions and find the best one"
 tag: featured
 ---
 
