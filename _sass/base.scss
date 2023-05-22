@@ -6,16 +6,23 @@ $bodyFont: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
 $white: #ffffff;
 $brand: #E71D36;
 $accent: #E3D26F;
+$muted: #a9a9a9;
+
 $base-size: 0.8rem; /* 16px */
 $golden-ratio: 1.618;
 $base-size-sm: 0.75rem;
 $golden-ratio-sm: 1.333;
+
 $button-color-primary: #ffffff;
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
+}
+
+.muted {
+  color: $muted !important;
 }
 
 // NAV STYLES
@@ -118,4 +125,16 @@ nav a.nav-link {
   to {
     opacity: 1;
   }
+}
+
+// FEATURED ARTICLES
+section.featured-articles>.title-col {
+  border-bottom: 1px solid $brand;
+}
+
+// CARDS
+.card {
+  background-color: transparent;
+  color: $white;
+  border: none;
 }
