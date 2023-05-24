@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: main_content
 title:  "Mary's red apple"
 ---
 

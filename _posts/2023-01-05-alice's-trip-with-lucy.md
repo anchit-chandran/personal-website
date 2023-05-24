@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: main_content
 title:  "Alice's Trip with Lucy"
 tag: featured
 ---

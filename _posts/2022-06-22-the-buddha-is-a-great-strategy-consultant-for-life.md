@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: main_content
 title:  "The Buddha is a great strategy consultant for Life"
 tag: featured
 ---

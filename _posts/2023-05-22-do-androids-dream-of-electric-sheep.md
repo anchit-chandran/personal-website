@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: main_content
 title:  "How algorithms avoid good solutions and find the best one"
 tag: featured
 ---
