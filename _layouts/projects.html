@@ -1,0 +1,11 @@
+---
+layout: default
+title: Projects
+---
+<h2>{{ page.title }}</h2>
+{% assign sorted_projects = site.posts | where: "category", "project" %}
+<ul>
+    {% for post in sorted_projects %}
+    <li>{{ post.title }}</li>
+    {% endfor %}
+</ul>

@@ -15,6 +15,11 @@ $golden-ratio-sm: 1.333;
 
 $button-color-primary: #ffffff;
 
+:root {
+  --pill-bg-color: #41060c;
+  --pill-text-color: #eaa7ba;
+}
+
 body {
   background: $backgroundColor;
   color: $bodyColor;
@@ -132,9 +137,28 @@ section.featured-articles>.title-col {
   border-bottom: 1px solid $brand;
 }
 
+// RECENT PROJECTS
+section.recent-projects>.title-col {
+  border-bottom: 1px solid $brand;
+}
+
+.project-card .card-text {
+  font-size: small;
+}
+
 // CARDS
 .card {
   background-color: transparent;
   color: $white;
   border: none;
+}
+
+// PILLS
+.badge.pill {
+  color: var(--pill-text-color);
+  background-color: var(--pill-bg-color);
+}
+
+.badge.pill:not(:first-child) {
+  margin-left: 1em;
 }

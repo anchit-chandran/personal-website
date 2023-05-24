@@ -34,13 +34,52 @@ title: Home
                     <img src="https://placehold.co/600x400" alt="" class="card-img-top">
                     <div class="card-body px-0">
                         <p class="card-title">{{ post.title }}</p>
-                        <p class="card-text"><small class="text-body-secondary muted">{{ post.date | date: "%d %b %Y" }}</small></p>
+                        <p class="card-text"><small class="text-body-secondary muted">{{ post.date | date: "%d %b %Y"
+                                }}</small></p>
                     </div>
                 </div>
             </div>
             {% endfor %}
             {% endif %}
             {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<section class="row recent-projects">
+    <div class="col-12 pb-2 px-0 d-flex justify-content-between align-items-end title-col">
+        <h4 class="mb-0">Recent Projects</h4>
+    </div>
+    <div class="col px-0">
+        <div class="row py-3">
+            {% assign sorted_projects = site.posts | where: "category", "project" | sort: "date" | reverse %}
+            {% for post in sorted_projects %}
+
+
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://placehold.co/600x400" alt="" class="img img-fluid">
+                    </div>
+                    <div class="col project-card card">
+                        <p class="card-title">{{ post.title }}</p>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                            blanditiis sed beatae labore atque officiis amet dolore enim rerum minima! Deserunt quidem
+                            obcaecati necessitatibus ut molestias sint hic inventore. Deserunt.</p>
+                        <div class="row">
+                            <div class="col d-flex justify-content-start pills">
+                                {% assign sorted_tags = post.tags | sort_tags %}
+                                {% for tag in sorted_tags %}
+                                <div class="p-2 badge pill">{{tag}}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
         </div>
     </div>
 </section>
